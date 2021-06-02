@@ -12,7 +12,7 @@ export class TransportService {
 
 
 registerUser(user:any){
-        return this.http.post<any>(this._registerUrl , {email:user.email});
+        return this.http.post<any>(this._registerUrl , user);
 
 }
 }

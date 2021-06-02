@@ -14,7 +14,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from './auth.service'; //new3
 import { EventsService } from './events.service'; //new4
 import { AuthGuard } from './auth.guard';//new 5
-import { TokenInterceptorService } from './token-interceptor.service';//new6
+import { TokenInterceptorService } from './token-interceptor.service';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { CartComponent } from './cart/cart.component';//new6
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { TokenInterceptorService } from './token-interceptor.service';//new6
     RegisterComponent,
     LoginComponent,
     EventsComponent,
-    SpecialEventsComponent
+    SpecialEventsComponent,
+    WelcomeComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
